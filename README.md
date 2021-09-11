@@ -1,13 +1,19 @@
 # TIL
+
 Today I Learn
 
 ## JavaScript
 
+- Basic grammar learning
+
+## React
+
+- with Sparta Coding Club, The content is in a App_development Repository
 
 ## Python
 
+## CodingTest
 
-## Ready_to_CodingTest
     : Step_by_Step Coding
 
 - Level 1 : I/O & arithmetic operation => Clear
