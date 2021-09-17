@@ -1,9 +1,8 @@
 n = int(input())
 
 aim = n
-new_num = 0
-temp = 0
-answer = 0
+new_num, temp, answer = 0, 0, 0
+
 while True:
     temp = n // 10 + n % 10
     new_num = (n%10) * 10 + temp % 10
