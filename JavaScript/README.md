@@ -22,4 +22,6 @@ undefined -> ex) let age;
 
 Learn operators -> { Numeric operators, Increment and Decrement operators, Assignment operators }
 
-# Testing ...
+${} = Python's f'{}
+
+Learn operators -> { Comparison operators, Logical operators, Equality operators }
