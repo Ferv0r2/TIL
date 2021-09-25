@@ -25,3 +25,7 @@ Learn operators -> { Numeric operators, Increment and Decrement operators, Assig
 ${} = Python's f'{}
 
 Learn operators -> { Comparison operators, Logical operators, Equality operators }
+
+Learn conditional -> { if, else, else if }
+
+Learn loop -> { while, for }
