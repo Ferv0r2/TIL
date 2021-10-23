@@ -1,11 +1,14 @@
-import random, json, sys, pandas as pd
+import random
+import json
+import sys
+import pandas as pd
 from PIL import Image
 
 bg_list, pattern_list, eyebrows_list, head_list, \
     eyes_list, neck_list, mouse_list = [], [], [], [], [], [], []
 
-path = ['PixelDogeClub Background', 'PixelDogeClub Pattern', 'PixelDogeClub Eyebrows', \
-     'PixelDogeClub Head', 'PixelDogeClub Eyes', 'PixelDogeClub Neck', 'PixelDogeClub Mouse']
+path = ['PixelDogeClub Background', 'PixelDogeClub Pattern', 'PixelDogeClub Eyebrows',
+        'PixelDogeClub Head', 'PixelDogeClub Eyes', 'PixelDogeClub Neck', 'PixelDogeClub Mouse']
 
 # 원하는 갯수
 print('시작 갯수, 끝 갯수 입력')
@@ -33,7 +36,7 @@ for i in range(10):
 
 
 ran_list = []
-ran_list.append([3, 1, 6, 3, 5, 10, 4]) # #0000번 사전등록
+ran_list.append([3, 1, 6, 3, 5, 10, 4])  # 0000번 사전등록
 
 for i in range(start, end+1):
     new_random = []
@@ -45,7 +48,7 @@ for i in range(start, end+1):
 
     while new_random in ran_list:
         new_random = []
-        
+
         ran = [0] * len(path)
 
         for j in range(len(ran)):
@@ -63,7 +66,7 @@ for i in range(start, end+1):
     base.paste(neck_list[ran[5]], mask=neck_list[ran[5]])
     base.paste(mouse_list[ran[6]], mask=mouse_list[ran[6]])
 
-    base.save('./Completed_v3/DOGE FRIENDS #%04d.png' %i, 'PNG')\
+    base.save('./Completed_v3/DOGE FRIENDS #%04d.png' % i, 'PNG')\
 
 
 
@@ -76,13 +79,13 @@ for i in range(len(path)):
     item_counts_list.append(item_counts)
 
 
-value = {'Background': item_counts_list[0], \
-            'Pattern' : item_counts_list[1], \
-            'Eyebrows' : item_counts_list[2], \
-            'Head' : item_counts_list[3], \
-            'Eyes' : item_counts_list[4], \
-            'Neck' : item_counts_list[5],
-            'Mouse' : item_counts_list[6] }
+value = {'Background': item_counts_list[0],
+         'Pattern': item_counts_list[1],
+         'Eyebrows': item_counts_list[2],
+         'Head': item_counts_list[3],
+         'Eyes': item_counts_list[4],
+         'Neck': item_counts_list[5],
+         'Mouse': item_counts_list[6]}
 
 value = pd.DataFrame(value)
 
