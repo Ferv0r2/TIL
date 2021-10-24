@@ -2,10 +2,8 @@ import time, sys, random, pandas as pd
 from numpy import e
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.alert import Alert
-from selenium.webdriver.common.keys import Keys
 import chromedriver_autoinstaller
-import subprocess, shutil, pyautogui, json
+import subprocess
 
 address = "###주소###"
 
