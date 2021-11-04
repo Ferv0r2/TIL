@@ -2,24 +2,6 @@
 
 Today I Learn
 
-## JavaScript
-
-- Basic grammar learning
-
-## React
-
-- with Sparta Coding Club, The content is in a App_development Repository
-
-## Python
-
-## CodingTest
-
-    : Step_by_Step Coding
-
-- Level 1 : I/O & arithmetic operation => Clear
-
-- Level 2 : If Syntax => Clear
-
 # Case
 
 - 카멜케이스 : 첫 번째 단어는 소문자, 두 번째 단어부터는 대문자
