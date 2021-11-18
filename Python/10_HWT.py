@@ -18,7 +18,7 @@ class WebServer:
             size = len(html.encode("utf-8"))
 
             response = f"HTTP/1.1 200 OK\n \
-            Content-Length: {size}\n\n{html}".encode("utf-8")
+                Content-Length: {size}\n\n{html}".encode("utf-8")
                 
             client.send(response)
             pass
