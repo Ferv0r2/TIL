@@ -24,41 +24,39 @@ for i in seeds_list:
         break
 
     ran = random.randrange(10) # 10개 중 1개의 확률 추출 -> 10퍼
-    if ran == 1: # 해당 숫자 레벨업
+    if ran == 1: # 해당 숫자 레벨업 뿌앙뿌앙뿌앙
         upgrade.append(time)
         if i == [1]:
             seeds_list[time] = [2]
-            print('새싹!', end=" ")
+            print('새싹몬 진화!', end=" ")
             continue
 
-        elif i == [2]:
+        if i == [2]:
             seeds_list[time] = [3]
-            print('꽃 피었다', end=" ")
+            print('꽃이 피었다구욧', end=" ")
             continue
 
-        elif i == [3]:
+        if i == [3]:
             seeds_list[time] = [4]
-            print('열매 등장', end=" ")
+            print('열매 두둥등장', end=" ")
             continue
 
-        elif i == [4]: # 누구걸지를 고려하진 않음
+        if i == [4]: # 누구걸지를 고려하진 않음
             seeds_list[time] = [3]
-            if time == 0 or time == 1 or time == 2: # 레어
+            if time < 3: # 레어
                 seeds_list.append([1]) 
                 seeds_list.append([1]) 
                 seeds_list.append([1]) 
                 print('로켓단 등장', end=" ")
         
-            elif time == 3 or time == 4 or time == 5 \
-                or time == 6 or time == 7 or time == 8 \
-                or time == 9 or time == 10 or time == 11 or time == 12: # 준 레어
+            if time >= 3 and time < 13: # 준 레어
                 seeds_list.append([1]) 
                 seeds_list.append([1]) 
-                print('쌍둥이 탄생', end=" ")
+                print('쌍둥이가 탄생했다 이말이야', end=" ")
         
-            else:
+            if time >= 13:
                 seeds_list.append([1]) 
-                print('새 생명 탄생', end=" ")
+                print('새 생명이 탄생했다 이말이야', end=" ")
             continue
         continue
     time += 1
