@@ -25,7 +25,8 @@ for i in seeds_list:
 
     ran = random.randrange(10) # 10개 중 1개의 확률 추출 -> 10퍼
     if ran == 1: # 해당 숫자 레벨업 뿌앙뿌앙뿌앙
-        upgrade.append(time)
+        if time not in upgrade:
+            upgrade.append(time)
         if i == [1]:
             seeds_list[time] = [2]
             print('새싹몬 진화!', end=" ")
