@@ -20,3 +20,7 @@ for tr in table.find_all('tr'):
             temp = tds[5].text
             humidity = tds[9].text
             print("{0:<7} {1:<7} {2:<7}".format(point,temp,humidity))
+
+# 하나의 항목만 선택하고 싶을 때, Selector를 가져와서 넣으면 됨
+weather = soup.select_one('#digital-forecast > div.cmp-dfs-slider.hr1-fct')
+weather = soup.select('#digital-forecast > div.cmp-dfs-slider.hr1-fct')
