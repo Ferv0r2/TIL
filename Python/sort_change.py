@@ -25,6 +25,6 @@ for i in count_list:
     count_list[count_index] = temp
     count_index += 1
 
-num_list = list(map(int, count_list))
+count_list = list(map(int, count_list))
 
-print(num_list)
+print(count_list)
