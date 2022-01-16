@@ -1,0 +1,23 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "Today I Learn",
+  "main": "index.js",
+  "dependencies": {
+    "truffle": "^4.1.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferv0r2/TIL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferv0r2/TIL/issues"
+  },
+  "homepage": "https://github.com/Ferv0r2/TIL#readme"
+}
