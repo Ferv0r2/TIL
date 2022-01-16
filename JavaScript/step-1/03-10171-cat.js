@@ -1,6 +1,4 @@
-const cat = `\\    /\\
- )  ( ') 
+console.log(`\\    /\\
+ )  ( ')
 (  /  )
- \\(__)|`;
-
-console.log(cat);
+ \\(__)|`);
