@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Canvas Sample</title>
+  </head>
+
+  <body>
+    <canvas
+      id="canvas"
+      width="800"
+      height="800"
+      style="border: 1px solid black"
+    >
+    </canvas>
+    <p></p>
+    <button id="add">add 10 circles</button>
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      const app = new DrawingApp(document.getElementById("canvas"));
+
+      const button = document.getElementById("add");
+      button.onclick = () => app.addCircles(10);
+    </script>
+  </body>
+</html>
